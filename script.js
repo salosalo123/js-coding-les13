@@ -70,6 +70,7 @@ let user = {
     studentstatus: 'active'
 }
 
+
 if ( userg.age < 18 && userg.studentstatus =='active') {
     console.log( 'hello');
 } else if (userg.name == 'Levani') {
@@ -80,6 +81,11 @@ if ( userg.age < 18 && userg.studentstatus =='active') {
     console.log('error');
 }
 
+
+let result = ( userg.age < 18 && userg.studentstatus =='active') ? 'hello' : 
+(userg.name == 'Levani') ? 'Hello Levani' 
+: (userg.studentstatus =='active' || userg.age < 25 ) ? 'Hallo world' : 'error' ;
+console.log(result);
 
 // 7. 
 // მოცემული მასივიდან for ციკლი ს საშუალებით კონსოლში გამოიტანეთ მხოლოდ დადებითი რიცხვები:
