@@ -80,11 +80,18 @@ if ( userg.age < 18 && userg.studentstatus =='active') {
 } else {
     console.log('error');
 }
+  
 
+// ან მეორე ვარიანტი 
 
-let result = ( userg.age < 18 && userg.studentstatus =='active') ? 'hello' : 
-(userg.name == 'Levani') ? 'Hello Levani' 
-: (userg.studentstatus =='active' || userg.age < 25 ) ? 'Hallo world' : 'error' ;
+let result = 
+   userg.age < 18 && userg.studentstatus =="active"
+    ? "hello" 
+    :  userg.name == "Levani" 
+    ? "Hello Levani" 
+    :  userg.studentstatus == "active" || userg.age < 25 
+    ? "Hallo world" 
+    : "error" ;
 console.log(result);
 
 // 7. 
